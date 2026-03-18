@@ -1,12 +1,11 @@
 import { useEffect, useRef, useState } from "react";
-import Constants from "expo-constants";
 import { ScrollView, Button, Text, View, StyleSheet } from "react-native";
 
 const HTTP_URL = process.env.EXPO_PUBLIC_API_URL;
 const HELLO_API = HTTP_URL + "/hello";
 const WS_URL = HTTP_URL + "/ws";
 
-export default function test_page() {
+export default function TestPage() {
   const [http_response, set_http_response] = useState<string>("");
   const [ws_messages, set_ws_messages] = useState<string[]>([]);
   const ws_ref = useRef<WebSocket | null>(null);
