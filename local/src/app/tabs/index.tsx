@@ -5,7 +5,7 @@ export default function Index() {
   return (
     <View style={styles.container}>
       <Text>Edit src/app/index.tsx to edit this screen.</Text>
-      <Link href="/test">点此测试网络连接</Link>
+      <Link href="/tabs/test">点此测试网络连接</Link>
     </View>
   );
 }
